@@ -23,5 +23,7 @@ get diagnostic() { return JSON.stringify(this.model); }
 
   ngOnInit() {
   }
-
+  newHero() {
+    this.model = new Hero(42, '', '');
+  }
 }
